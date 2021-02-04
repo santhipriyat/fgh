@@ -6,17 +6,6 @@ provider "azurerm" {
   tenant_id       = "90c3f360-0a02-49e4-b70c-4ebb69378edf"
   features {}
 }
-terraform {
-  backend "azurerm" {
-    storage_account_name = "ssaccount1"
-    container_name       = "container23"
-    key                  = "qa.terraform.tfstate"
-
-    # rather than defining this inline, the Access Key can also be sourced
-    # from an Environment Variable - more information is available below.
-    access_key = "+ZxN57EO8X24Zbn3/OqE7YmNb6scXuCP2781nyUgZS0UyxNzeKJm7RbFMTUK9LAvukMhx+85+Z5rwPn70lus9g=="
-  }
-}
 
 
   
